@@ -3,63 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Maker | صانع المستقبل</title>
-    <meta name="description" content="موقع Future Maker - نصنع مستقبلك الرقمي معاً">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <title>Future Maker - الرئيسية</title>
+    <style>
+        /* CSS كامل في نفس الملف */
+        :root {
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        .main-header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-right: 20px;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--dark);
+        }
+        
+        /* Footer */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Future Maker</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="pages/about.html">عني</a></li>
-                <li><a href="pages/portfolio.html">أعمالي</a></li>
-                <li><a href="pages/blog.html">المدونة</a></li>
-                <li><a href="pages/services.html">الخدمات</a></li>
-                <li><a href="pages/contact.html" class="cta-button">تواصل معي</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Future Maker</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link active">الرئيسية</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">عني</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">أعمالي</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">تواصل معي</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>نصنع المستقبل معاً</h2>
-            <p>مرحباً بك في عالم الإبداع الرقمي، حيث تتحول الأفكار إلى واقع ملموس</p>
-            <a href="pages/portfolio.html" class="main-button">استعرض أعمالي</a>
+        <div class="container">
+            <h1>مرحباً بك في Future Maker</h1>
+            <p>نصنع المستقبل الرقمي معاً</p>
+            <a href="#portfolio" class="btn">استعرض أعمالي</a>
+            <a href="#contact" class="btn">تواصل معي</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h3>ماذا أقدم لك؟</h3>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h4>تصميم ويب متميز</h4>
-                <p>تصاميم عصرية تلبي احتياجاتك</p>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">عني</h2>
+            <div style="text-align: center;">
+                <p>أنا مطور ويب محترف، أتخصص في إنشاء مواقع وتطبيقات ويب حديثة.</p>
             </div>
-            <div class="feature-card">
-                <h4>استشارات تقنية</h4>
-                <p>نصائح احترافية لمشروعك</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">أعمالي</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3>مشروع 1</h3>
+                    <p>موقع إلكتروني متكامل</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3>مشروع 2</h3>
+                    <p>تطبيق ويب تفاعلي</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <h4>تطوير متكامل</h4>
-                <p>حلول برمجية شاملة</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <input type="text" placeholder="اسمك" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="email" placeholder="بريدك الإلكتروني" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <textarea placeholder="رسالتك" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; height: 150px;"></textarea>
+                    <button class="btn" style="background: var(--primary); color: white; border: none; cursor: pointer;">إرسال</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2024 Future Maker. جميع الحقوق محفوظة</p>
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 Future Maker. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script>
+        // JavaScript في نفس الملف
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('موقع Future Maker يعمل بنجاح!');
+            
+            // التنقل السلس
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId !== '#') {
+                        const targetElement = document.querySelector(targetId);
+                        if(targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // تغيير لون Header عند التمرير
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.main-header');
+                if(window.scrollY > 100) {
+                    header.style.background = 'rgba(255,255,255,0.95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.background = 'white';
+                    header.style.backdropFilter = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
