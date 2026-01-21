@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Future Maker - نصنع مستقبلك الرقمي معاً">
+    <meta name="keywords" content="تصميم مواقع, تطوير ويب, تسويق رقمي, استشارات تقنية">
+    <meta name="author" content="Future Maker">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Future Maker">
+    <meta property="og:description" content="موقع Future Maker - نصنع مستقبلك الرقمي معاً">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://futuremaker.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Future Maker">
+    <meta name="twitter:description" content="نصنع مستقبلك الرقمي معاً">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/icons/icon-192x192.png">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading -->
+    <div class="loading-overlay" id="loading">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">🚀</div>
+                        <div class="logo-text">
+                            <span class="logo-primary">Future</span>
+                            <span class="logo-secondary">Maker</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pages/about.html" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>عني</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/about.html#bio">السيرة الذاتية</a></li>
+                            <li><a href="pages/about.html#skills">المهارات</a></li>
+                            <li><a href="pages/about.html#experience">الخبرات</a></li>
+                            <li><a href="pages/about.html#certificates">الشهادات</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/portfolio.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>أعمالي</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="pages/blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i>
+                            <span>المدونة</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/blog.html">جميع المقالات</a></li>
+                            <li><a href="pages/blog.html?category=web">تطوير ويب</a></li>
+                            <li><a href="pages/blog.html?category=design">تصميم</a></li>
+                            <li><a href="pages/blog.html?category=marketing">تسويق</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/services.html" class="nav-link">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>الخدمات</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contact.html" class="nav-link cta-button">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>تواصل معي</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Theme Toggle -->
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">
+                <div class="logo-icon">🚀</div>
+                <div class="logo-text">
+                    <span class="logo-primary">Future</span>
+                    <span class="logo-secondary">Maker</span>
+                </div>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="pages/about.html"><i class="fas fa-user"></i> عني</a></li>
+            <li><a href="pages/portfolio.html"><i class="fas fa-briefcase"></i> أعمالي</a></li>
+            <li><a href="pages/blog.html"><i class="fas fa-blog"></i> المدونة</a></li>
+            <li><a href="pages/services.html"><i class="fas fa-concierge-bell"></i> الخدمات</a></li>
+            <li><a href="pages/contact.html"><i class="fas fa-paper-plane"></i> تواصل معي</a></li>
+        </ul>
+        
+        <div class="mobile-footer">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2024 Future Maker</p>
+        </div>
+    </div>
