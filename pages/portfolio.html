@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالي | Future Maker</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <header><!-- نفس الهيدر --></header>
+
+    <main class="container">
+        <h1>معرض أعمالي</h1>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="web">مواقع ويب</button>
+            <button class="filter-btn" data-filter="design">تصميم</button>
+            <button class="filter-btn" data-filter="consulting">استشارات</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web">
+                <img src="../assets/images/portfolio/project1.jpg" alt="مشروع 1">
+                <div class="portfolio-overlay">
+                    <h3>موقع شركة تقنية</h3>
+                    <p>تصميم وتطوير موقع متكامل</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="design">
+                <img src="../assets/images/portfolio/project2.jpg" alt="مشروع 2">
+                <div class="portfolio-overlay">
+                    <h3>هوية بصرية</h3>
+                    <p>تصميم شعار وهوية كاملة</p>
+                </div>
+            </div>
+            
+            <!-- المزيد من المشاريع -->
+        </div>
+    </main>
+
+    <script src="../assets/js/portfolio.js"></script>
+</body>
+</html>
