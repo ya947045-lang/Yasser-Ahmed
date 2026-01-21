@@ -1698,9 +1698,20 @@
         }
         
         // ===== توليد محتوى ديناميكي =====
-        function generateDynamicContent() {
-            // يمكنك إضافة محتوى ديناميكي هنا
-            console.log('موقع Future Maker يعمل بنجاح!');
+        function smartGreeting() {
+    const hour = new Date().getHours();
+    let greeting = "مرحباً!";
+    
+    if (hour >= 5 && hour < 12) {
+        greeting = "صباح الخير! ☀️";
+    } else if (hour >= 12 && hour < 17) {
+        greeting = "مساء الخير! 🌤️";
+    } else {
+        greeting = "مساء الخير! 🌙";
+    }
+    
+    console.log(greeting + ' في موقع Future Maker');
+    return greeting;
         }
         
         // تشغيل التهيئة النهائية
