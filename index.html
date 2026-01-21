@@ -1056,19 +1056,52 @@
                         أؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان وليست العكس.
                     </p>
                 </div>
-                
                 <div style="text-align: center;">
-    <!-- استبدل YOUR-PHOTO-HERE.jpg برابط صورتك -->
-    <img src="YOUR-PHOTO-HERE.jpg" 
-         alt="صورتي الشخصية"
-         style="
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #007bff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-         ">
+    
+    <!-- حاوية الصورة -->
+    <div style="
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 
+            0 0 0 10px #f8f9fa,
+            0 15px 40px rgba(0, 0, 0, 0.15);
+        transition: transform 0.5s ease;
+    " 
+    onmouseover="this.style.transform='rotate(5deg)'"
+    onmouseout="this.style.transform='rotate(0deg)'">
+        
+        <!-- صورتك -->
+        <img src="صورتك.jpg" 
+             alt="صورتي الشخصية"
+             style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+             "
+             onmouseover="this.style.transform='scale(1.1)'"
+             onmouseout="this.style.transform='scale(1)'">
+        
+        <!-- طبقة شفافة فوق الصورة -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom, 
+                transparent 70%, 
+                rgba(0, 123, 255, 0.1)
+            );
+            pointer-events: none;
+        "></div>
+    </div>
+    
                 </div>
 
             <div style="margin-bottom: 80px;">
